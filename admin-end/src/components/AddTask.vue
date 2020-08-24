@@ -79,7 +79,7 @@
                             </div>
                           </div>
                         <div> 
-                            <router-link to="allTasks">View Task</router-link>
+                            <router-link to="allTasks">View All Task</router-link>
                         </div>  
                     </div>
     

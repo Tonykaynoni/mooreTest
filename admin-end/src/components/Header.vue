@@ -11,7 +11,7 @@
         <router-link class="nav-link" to="/">Create Task<span class="sr-only">(current)</span></router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="allTasks">Tasks</router-link>
+        <router-link class="nav-link" to="allTasks">All Tasks</router-link>
       </li>
     </ul>
   </div>
