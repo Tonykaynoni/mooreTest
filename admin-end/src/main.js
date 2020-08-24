@@ -14,7 +14,7 @@ import AllTasks from './components/AllTasks.vue';
 Vue.use(VueSweetalert2);
 Vue.use(Loading);
 Vue.use(VModal);
-
+Vue.use(require('vue-moment'));
 Vue.config.productionTip = false
 Vue.use(VueRouter);
 

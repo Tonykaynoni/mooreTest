@@ -32,7 +32,7 @@
                   <th scope="row">{{ $index + 1 }}</th>
                   <td>{{ info.title }}</td>
                   <td>{{ info.details }}</td>
-                  <td>{{ info.created_at }}</td>
+                  <td>{{ info.created_at | moment("dddd, MMMM Do YYYY") }}</td>
                   <td>
                     <button class="btn btn-danger" @click="deleteTask(info.id,$index)">Delete</button>
                     <button class="btn btn-primary" @click="showModal(info,$index)">Edit</button>
@@ -111,6 +111,11 @@ export default {
         task_details: "",
       }
     };
+  },
+  filters: {
+    fallback: function(name) {
+      return name ? name : 'there'
+    }
   },
   methods: {
 
